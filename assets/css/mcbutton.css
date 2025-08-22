@@ -1,0 +1,105 @@
+@font-face {
+  font-family: 'Minecraft';
+  src: url('../fonts/minecraft.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.coolthings {
+    top: 20vw;
+    left: 39vw;
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+}
+
+#mcbuttonlink0, #mcbuttonlink1 {
+    text-decoration: none;
+}
+
+.mcbuttonback {
+    background-color: #1d4d13;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mcbuttonbackend {
+    font-family: 'Minecraft';
+    font-size: 30px;
+    width: 300px;
+    height: 60px;
+    pointer-events: none;
+}
+
+#availablenow {
+    width: 400px;
+    height: 80px;
+}
+
+.mcbutton {
+    background-color: #1e1e1f;
+    color: white;
+    font-weight: 100;
+    letter-spacing: 1px;
+    border: 6px solid #1e1e1f;
+    border-top: 14px solid #1e1e1f;
+    user-select: none;
+    pointer-events: none;
+}
+
+.mcbuttonfront {
+    background-color: #3c8527;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+    box-shadow:
+    inset 0 6px #639d52,  /* top */
+    inset 6px 0 #639d52,  /* left */
+    inset 0 -6px #4f913c, /* bottom */
+    inset -6px 0 #4f913c; /* right */
+    pointer-events: all;
+    cursor: pointer;
+}
+
+.mcbuttonfront:hover {
+    background-color: #2a641c;
+    margin-bottom: 16px;
+    box-shadow:
+    inset 0 6px #7fa277,  /* top */
+    inset 6px 0 #7fa277,  /* left */
+    inset 0 -6px #699260, /* bottom */
+    inset -6px 0 #699260; /* right */
+}
+
+.mcbuttonfront:active {
+    background-color: #1d4d13;
+    margin-bottom: 0;
+    box-shadow:
+    inset 0 6px #779471,  /* top */
+    inset 6px 0 #779471,  /* left */
+    inset 0 -6px #608259, /* bottom */
+    inset -6px 0 #608259; /* right */
+}
+
+.mcbuttonback:hover {
+    background-color: #1d4d13;
+}
+
+.mcbuttonbackend:active {
+    padding-top: 8px;
+}
+
+.mcbutton:active {
+    border-top: 6px solid #1e1e1f;
+}
