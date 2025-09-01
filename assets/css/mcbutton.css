@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'Minecraft';
+    src: url('../fonts/minecraft.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #111030;
+    background: linear-gradient(151deg, rgba(17, 16, 48, 1) 0%, rgba(25, 10, 36, 1) 50%, rgba(20, 7, 26, 1) 100%);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.mcbutton-wrapper {
+    position: relative;
+    display: flex;
+    width: 480px;
+    height: 180px;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/inventory.png');
+    background-size: 100% 100%;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    z-index: 3;
+}
+
+.mcbutton-backend {
+    font-family: 'Minecraft';
+    font-size: 30px;
+    pointer-events: all;
+    position: relative;
+    z-index: 5;
+}
+
+.mcbutton-backend a {
+    text-decoration: none;
+}
+
+.mcbutton-back {
+    background-color: #1d4d13;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+.mcbutton {
+    width: 400px;
+    height: 80px;
+    background-color: #1e1e1f;
+    color: white;
+    font-weight: 100;
+    letter-spacing: 1px;
+    border: 6px solid #1e1e1f;
+    border-top: 14px solid #1e1e1f;
+    user-select: none;
+    pointer-events: none;
+}
+
+.mcbutton-front {
+    background-color: #3c8527;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+    box-shadow:
+    inset 0 6px #639d52,  /* top */
+    inset 6px 0 #639d52,  /* left */
+    inset 0 -6px #4f913c, /* bottom */
+    inset -6px 0 #4f913c; /* right */
+    cursor: pointer;
+}
+
+@media (hover: hover) {
+    .mcbutton-front:hover {
+        background-color: #377926;/* #2a641c; */
+        margin-bottom: 16px;
+        pointer-events: all;
+        box-shadow:
+        inset 0 6px #6ea55e,  /* top */
+        inset 6px 0 #6ea55e,  /* left */
+        inset 0 -6px #549443, /* bottom */
+        inset -6px 0 #549443; /* right */
+        /* inset 0 6px #7fa277,  /* top */
+        /* inset 6px 0 #7fa277,  /* left */
+        /* inset 0 -6px #699260, /* bottom */
+        /* inset -6px 0 #699260; /* right */
+    }
+}
+
+.mcbutton-front.active {
+    background-color: #265e1b; /* #1d4d13 */
+    margin-bottom: 0;
+    box-shadow:
+    inset 0 6px #75946f,  /* top */
+    inset 6px 0 #75946f,  /* left */
+    inset 0 -6px #5b7e54, /* bottom */
+    inset -6px 0 #5b7e54; /* right */
+}
+
+.mcbutton-back:hover {
+    background-color: #1d4d13;
+}
+
+.mcbutton-backend.active {
+    padding-top: 8px;
+}
+
+.mcbutton.active {
+    border-top: 6px solid #1e1e1f;
+}
+
+.mcbutton:active {
+    border-top: 6px solid #1e1e1f;
+}
